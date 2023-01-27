@@ -1,0 +1,440 @@
+/*  
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
+*/
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.7em;
+    font-size: 17px;
+    background-color: #212529;
+    color: #F8F9FA;
+}
+
+main h1 {
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    margin-top: 40px;
+}
+
+main h2 {
+    font-family: 'Titillium Web', sans-serif;
+}
+
+html {
+    position: relative;
+    min-height: 100vh;
+}
+
+header h2 {
+    font-family: 'Titillium Web', sans-serif;
+    margin: 0px;
+}
+
+header {
+    background-color: #9d0208;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+#menu-button {
+    width: 30px;
+    padding: 8px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}
+
+#menu-button:hover {
+    border-radius: 50%;
+    background-color: #7E0B11;
+    cursor: pointer;
+}
+
+.nav-items {
+    display: none;
+}
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    background-color: #1B1F22;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #F8F9FA;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    font-size: 23px;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 36px;
+}
+
+.sidenav .closebtn:hover {
+    font-size: 36px;
+    color: #9d0208;
+}
+
+#active {
+    background-color: #282C30;
+    border-left:#9d0208 8px solid;
+    padding-left: 24px;
+}
+
+footer {
+    background-color: #2F3337;
+    padding: 20px;
+    padding-bottom: 37px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+footer p {
+    text-align: center;
+}
+
+.social-media img {
+    width: 40px;
+    filter:  brightness(0) invert(1);
+}
+
+.social-media {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* applies to buttons on footer, home page, and about us page */
+.button-div a {
+    text-decoration: none;
+    color: white;
+}
+
+.button-div {
+    display: flex;
+    justify-content: center;
+}
+
+.button-div button {
+    background-color: #9d0208;
+    border: none;
+    padding: 10px 20px;
+    margin: 10px;
+}
+
+.button-div button:hover {
+    border: 3px solid #9d0208;
+    margin-bottom: 4px;
+    background-color: transparent;
+}
+
+/* ----------------------------------------------------------------- */
+/* -------------------------- HOME PAGE ---------------------------- */
+/* ----------------------------------------------------------------- */
+
+.banner-img {
+    width: 100%;
+}
+
+#home-main {
+    margin: 20px;
+    padding-bottom: 350px;
+}
+
+#home-main img {
+    width: 100%;
+}
+
+#home-h2-2 {
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+/* ----------------------------------------------------------------- */
+/* -------------------------- GALLERY PAGE ------------------------- */
+/* ----------------------------------------------------------------- */
+
+#gallery-main h1 {
+    margin-bottom: -10px;
+}
+
+#gallery-main {
+    padding-bottom: 300px;
+}
+
+.photo-div {
+    margin: 45px 20px;
+    box-shadow: 0px 0px 15px -1px #000000;
+    padding-bottom: 10px;
+    background-color: #2F3337;
+}
+
+.photo-div p {
+    margin: 3px 15px;
+    line-height: 1.5em;
+    font-size: 16px;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.swiper-slide img {
+    width: 100%;
+    height: 100%;
+}
+ 
+.swiper .swiper-button-prev, .swiper .swiper-button-next {
+    color: white;
+}
+
+.swiper .swiper-pagination-bullet-active {
+    background-color: white;
+}
+
+
+/* ----------------------------------------------------------------- */
+/* -------------------------- CONTACT PAGE ------------------------- */
+/* ----------------------------------------------------------------- */
+
+#contact-main h1{
+    margin-bottom: 25px;
+}
+
+#contact-p {
+    text-align: center;
+}
+
+#contact-main {
+    margin: 20px;
+    padding-bottom: 200px;
+}
+
+.contact-div {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    height: 30px;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.contact-div img {
+    height: 30px;
+}
+
+.alert {
+    padding: 10px;
+    color: black;
+    margin-left: auto;
+    margin-right: auto;
+    position: fixed;
+    top: 80px;
+    left: 10px;
+    right: 10px;
+    display: none;
+    background-color: #fff0f3;
+    border: 3px solid #9d0208;
+}
+
+.alert p {
+    margin: 0px;
+}
+
+#success-alert {
+    border: 5px solid #a7c957;
+    background-color: #ECF5D8;
+}
+
+.alert-close-btn {
+    margin-left: 15px;
+    margin-right: 5px;
+    color: black;
+    float: right;
+    font-size: 30px;
+    line-height: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+  
+.alert-close-btn:hover {
+    color: #9d0208;
+}
+
+#email-div, #phone-number-div {
+    display: none;
+}
+
+.form-input {
+    margin-top: 7px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    height: 35px;
+    padding: 10px;
+    font-size: 17px;
+    background-color: #F8F9FA;
+    color: black;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+#contact-form-div {
+    padding: 25px;
+    border-radius: 9px;
+    background-color: #F8F9FA;
+    color: black;
+    margin-top: 35px;
+    box-shadow: 0px 0px 15px -1px rgba(0, 0, 0, 0.75);
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contact-form-div label {
+    cursor: pointer;
+}
+
+#contact-form-div h2 {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#form-label-p {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+#message {
+    height: 135px;
+    resize: none; 
+    padding: 10px;
+    font-size: 17px;
+}
+
+.radio-buttons {
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+/* get radio button background color to match form background color */
+input[type='radio'] {
+    appearance: none;
+    background-color: #F8F9FA;
+    margin: 0px;
+    font: inherit;
+    color: currentColor;
+    width: 0.8em;
+    height: 0.8em;
+    border: 1px solid black;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+textarea:focus, .form-input:focus{
+    outline: none;
+    border: 1px solid #9d0208;
+}
+
+/* change autofill background color to be transparent instead of blue */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+.form-label {
+    font-size: 1.1rem;
+}
+
+#submit-contact-form {
+    background-color: #9d0208;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 25px;
+    cursor: pointer;
+}
+
+#submit-contact-form:hover {
+    background-color: #7E0B11;
+}
+
+.form-submit-button-div {
+    text-align: right;
+}
+
+
+/* ----------------------------------------------------------------- */
+/* -------------------------- ABOUT PAGE --------------------------- */
+/* ----------------------------------------------------------------- */
+
+#about-main {
+    margin: 20px;
+    padding-bottom: 350px;
+}
+
+.about-us-photo {
+    width: 100%;
+    max-width: 440px;
+    margin-top: 40px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about-us-body {
+    background-color: #212529;
+    color: white;
+}
+
+
+/* ----------------------------------------------------------------- */
+/* -------------------------- SERVICES PAGE ------------------------ */
+/* ----------------------------------------------------------------- */
+
+#services-main {
+    padding: 10px;
+    padding-bottom: 350px;
+}
+
+#services-main h1 {
+    margin-top: 30px;
+}
+
+#services-main h2 {
+    margin-top: 0px;
+}
+
+.services-grid-container img {
+    width: 100%;
+}
+
+.services-grid-container {
+    padding: 20px;
+}

@@ -1,0 +1,64 @@
+/* Large devices (laptops/desktops, 1000px and up) */
+@media only screen and (min-width: 1000px) {
+
+    #menu-button {
+        display: none;
+    }
+
+    .nav-items {
+        display: inline-flex;
+        justify-content: flex-end;
+        gap: 0px;
+        padding: 0px;
+        margin-bottom: -1px;
+        position: fixed;
+        top: 0px;
+        right: 0px;
+        height: 68.9px;
+    }
+
+    .nav-items a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+        line-height: 68.9px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .nav-items a:hover {
+        border-bottom: white 2px solid;
+        line-height: 66.9px;
+    }
+
+    #active {
+        border-left: none;
+        background-color: #9d0208;
+        padding-left: 20px;
+    }
+
+    /* GALLERY PAGE */
+
+    .photo-div {
+        width: 70%;
+        max-width: 800px;
+    }
+
+    /* SERVICES PAGE */
+
+    #services-main {
+        width: 86%;
+        max-width: 1150px;
+    }
+
+    .services-grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        box-sizing: border-box;
+    }
+
+    .services-grid-container img {
+        align-self: center;
+    }
+}

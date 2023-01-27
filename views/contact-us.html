@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact Us</title>
+    <meta name="description" content="Contact page.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#9d0208"/>
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="../css/medium.css">
+    <link rel="stylesheet" href="../css/large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Titillium+Web&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h2>Bandoleros Auto Body</h2>
+        <img id="menu-button" src="../images/white_menu_icon.png" alt="menu icon button">
+        <nav class="nav-items">
+            <a href="../index.html">Home</a>
+            <a href="../views/services-and-pricing.html">Services & Pricing</a>
+            <a href="../views/gallery.html">Gallery</a>
+            <a href="../views/about-us.html">About Us</a>
+            <a id="active" href="../views/contact-us.html">Contact Us</a>
+        </nav>
+    </header>
+    <main id="contact-main">
+
+        <div id="side-nav-div" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" id="nav-close-btn">&times;</a>
+            <a href="../index.html">Home</a>
+            <a href="../views/services-and-pricing.html">Services & Pricing</a>
+            <a href="../views/gallery.html">Gallery</a>
+            <a href="../views/about-us.html">About Us</a>
+            <a id="active" href="../views/contact-us.html">Contact Us</a>
+        </div>
+        
+        <div class="alert" id="success-alert">
+            <span class="alert-close-btn">&times;</span>  
+            <span>Success!</span> 
+            <p>Your message was sent successfully! Thank you for getting in touch, we look forward to talking with you soon!</p>
+        </div>
+
+        <div class="alert" id="error-alert">
+            <span class="alert-close-btn">&times;</span>  
+            <span>Error :(</span> 
+            <p>There was an error sending your message. Please try again. If problem persists give us a call.</p>
+        </div>
+
+        <div class="alert" id="require-alert">
+            <span class="alert-close-btn">&times;</span>  
+            <span>Please fill all required form fields</span>
+        </div>
+
+        <div id="contact-us-grid-container-div">
+            <div>
+                <h1>Contact Us</h1>
+                <p id="contact-p">We are happy to answer any questions you have! During non business hours it may take 24 hours to receive a response from us.</p>
+                    
+                <div class="contact-div"><img src="../images/phone.svg"><p>Text or Call: 928-457-7148</p></div>
+                <div class="contact-div"><img src="../images/mail.svg"><p>bandoleros-auto-body@gmail.com</p></div>
+                <div class="contact-div"><img src="../images/map-pin.svg"><p>Location: Snowflake AZ 85937</p></div>
+
+            </div>
+
+            <div id="contact-form-div">
+                <h2>Get in Touch!</h2>
+            
+                <form id="contact-form" name="contact-form" method="POST">
+                    <label class="form-label" for="name">*Name:</label>
+                    <input class="form-input" type="text" id="name" name="name" required>
+
+                    <p id="form-label-p" class="form-label">*Preferred Contact Method:</p>
+                    <div class="radio-buttons">
+                        <div>
+                            <input type="radio" id="text" name="contactMethod" value="text" required>
+                            <label for="text">Text</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="call" name="contactMethod" value="call">
+                            <label for="call">Call</label>
+                        </div>
+                        <div>
+                            <input type="radio" id="email" name="contactMethod" value="email">
+                            <label for="email">Email</label>
+                        </div>
+                    </div>
+                    
+                    <div id="phone-number-div">
+                        <label class="form-label" for="phone-number">*Phone Number:</label>
+                        <input class="form-input" type="text" id="phone-number" name="phone-number">
+                    </div>
+
+                    <div id="email-div">
+                        <label class="form-label" for="email-address">*Email:</label>
+                        <input class="form-input" type="email" id="email-address" name="email-address">
+                    </div>
+
+                    <label class="form-label" for="message">*Message:</label>
+                    <textarea class="form-input" id="message" name="message" required></textarea>
+
+                    <input type="hidden" name="contactInfo">
+
+                    <div class="form-submit-button-div"><input id="submit-contact-form" type="submit" value="Send Message"></div>
+                </form> 
+            </div>
+        </div>
+        
+
+    </main>
+    <footer>
+        <p>Find us on social media!</p>
+        <div class="social-media">
+            <img src="../images/plain-instagram-logo.svg">
+            <img src="../images/plain-facebook-logo.svg">
+        </div>
+    </footer>
+    
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('XDfuU85F9Huzq-qAF');
+        })();
+    </script>
+    <script src="../js/contact.js"></script>
+    <script src="../js/main.js"></script>
+
+</body>
+
+</html>
